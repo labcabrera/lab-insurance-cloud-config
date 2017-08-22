@@ -6,7 +6,7 @@ spring:
     name: insurance-ms-contract-creation
   data:
     mongodb:
-      uri: mongodb://localhost:27017/rmengine
+      uri: mongodb://localhost:27017/lab-insurance
 
 server:
   port: 8091
