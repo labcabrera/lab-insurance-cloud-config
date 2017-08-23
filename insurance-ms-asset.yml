@@ -1,0 +1,9 @@
+configuration:
+  projectName: insurance-ms-asset
+
+spring:
+  application:
+    name: insurance-ms-contract-creation
+
+server:
+  port: 8095
