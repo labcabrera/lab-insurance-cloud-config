@@ -17,4 +17,4 @@ management:
     enabled: false
 
 logging:
-  level.org: DEBUG
+  level.org.lab: DEBUG

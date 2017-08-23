@@ -4,22 +4,6 @@ configuration:
 spring:
   application:
     name: insurance-ms-contract-creation
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/lab-insurance
 
 server:
   port: 8091
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8070/eureka/
-
-management:
-  context-path: /admin
-  security:
-    enabled: false
-
-logging:
-level.org: INFO
