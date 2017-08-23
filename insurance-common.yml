@@ -1,3 +1,6 @@
+configuration:
+  projectName: insurance-common
+
 spring:
   data:
     mongodb:

@@ -3,7 +3,7 @@ configuration:
 
 spring:
   application:
-    name: insurance-ms-contract-creation
+    name: insurance-ms-asset
 
 server:
   port: 8095
