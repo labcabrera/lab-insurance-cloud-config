@@ -18,4 +18,3 @@ management:
 
 logging:
   level.org: INFO
-  level.org.lab: DEBUG
