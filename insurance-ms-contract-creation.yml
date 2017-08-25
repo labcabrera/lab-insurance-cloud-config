@@ -1,9 +1,0 @@
-configuration:
-  projectName: insurance-ms-contract-creation
-
-spring:
-  application:
-    name: insurance-ms-contract-creation
-
-server:
-  port: 8091

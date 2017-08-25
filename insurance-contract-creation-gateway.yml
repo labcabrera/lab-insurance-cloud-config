@@ -1,0 +1,9 @@
+configuration:
+  projectName: insurance-contract-creation-gateway
+
+spring:
+  application:
+    name: insurance-contract-creation-gateway
+
+server:
+  port: 8081
