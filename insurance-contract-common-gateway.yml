@@ -1,0 +1,9 @@
+configuration:
+  projectName: insurance-contract-common-gateway
+
+spring:
+  application:
+    name: insurance-contract-common-gateway
+
+server:
+  port: 8091
