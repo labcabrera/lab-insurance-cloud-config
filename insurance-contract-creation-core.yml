@@ -1,0 +1,6 @@
+configuration:
+  projectName: insurance-contract-creation-core
+
+spring:
+  application:
+    name: insurance-contract-creation-core

@@ -1,6 +1,0 @@
-configuration:
-  projectName: insurance-contract-creation-integration
-
-spring:
-  application:
-    name: insurance-contract-creation-integration

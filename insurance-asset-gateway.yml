@@ -1,0 +1,9 @@
+configuration:
+  projectName: insurance-contract-creation-gateway
+
+spring:
+  application:
+    name: insurance-asset-gateway
+
+server:
+  port: 8089

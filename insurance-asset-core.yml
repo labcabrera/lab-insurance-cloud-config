@@ -1,0 +1,7 @@
+configuration:
+  projectName: insurance-asset-core
+
+spring:
+  application:
+    name: insurance-asset-core
+
