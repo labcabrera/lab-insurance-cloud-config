@@ -1,0 +1,9 @@
+configuration:
+  projectName: insurance-portfolio-gateway
+
+spring:
+  application:
+    name: insurance-portfolio-gateway
+
+server:
+  port: 8095
