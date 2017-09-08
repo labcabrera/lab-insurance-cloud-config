@@ -1,0 +1,9 @@
+configuration:
+  projectName: insurance-order-gateway
+
+spring:
+  application:
+    name: insurance-order-gateway
+
+server:
+  port: 8096
