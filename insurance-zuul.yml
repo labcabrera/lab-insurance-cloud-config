@@ -43,10 +43,6 @@ zuul:
     agreements:
       path: /agreements/**
       url: http://localhost:8097/
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8070/eureka/
 
 #ribbon:
 #  eureka:
