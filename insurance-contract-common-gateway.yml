@@ -6,4 +6,4 @@ spring:
     name: insurance-contract-common-gateway
 
 server:
-  port: ${app.port-mapping.contract-gateway}
+  port: {app.port-mapping.contract-gateway}
