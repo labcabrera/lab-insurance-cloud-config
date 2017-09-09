@@ -15,8 +15,14 @@ eureka:
 server:
 #TODO falta configuracion en elasticbeanstalk
 #  port: ${PORT:8070}
-  port: 80 
+  port: 8070 
 
 logging:
   level:
     com.netflix.eureka.registry: WARN
+
+---
+spring:
+  profiles: aws
+server:
+  port: 80
