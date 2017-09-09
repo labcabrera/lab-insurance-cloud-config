@@ -2,8 +2,8 @@ configuration:
   projectName: insurance-eureka
 
 eureka:
-  instance:
-    hostname: localhost
+#  instance:
+#    hostname: localhost
   server:
     eviction-interval-timer-in-ms: 10000
   client:
@@ -18,3 +18,16 @@ server:
 logging:
   level:
     com.netflix.eureka.registry: WARN
+
+---
+spring:
+  profiles: local
+eureka:
+  instance:
+    hostname: localhost
+---
+spring:
+  profiles: aws
+eureka:
+  instance:
+    hostname: lab-insurance-eureka.eu-west-1.elasticbeanstalk.com
