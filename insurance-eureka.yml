@@ -12,15 +12,15 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
-server:
-#TODO falta configuracion en elasticbeanstalk
-#  port: ${PORT:8070}
-  port: 8070 
-
 logging:
   level:
     com.netflix.eureka.registry: WARN
 
+---
+spring:
+  profiles: default
+server:
+  port: ${PORT:8070}
 ---
 spring:
   profiles: aws
