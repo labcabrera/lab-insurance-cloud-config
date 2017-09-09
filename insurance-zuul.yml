@@ -18,10 +18,9 @@ server:
 zuul:
   prefix: /api
   routes:
-    # Error: eureka discovery dont resove server list (see issues):
-    contracts:
-      path: /contracts/**
-      url: http://localhost:8090/
+    #TODO cambiar por los valores de eureka, aunque esta provocando un error
+    #INSURANCE-CONTRACT-COMMON-GATEWAY: /contracts/**
+    insurance-contract-common-gateway: /contracts/**
     legal-entities:
       path: /legal-entities/**
       url: http://localhost:8091/
