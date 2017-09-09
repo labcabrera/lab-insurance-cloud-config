@@ -19,8 +19,10 @@ zuul:
   prefix: /api
   routes:
     #TODO cambiar por los valores de eureka, aunque esta provocando un error
-    #INSURANCE-CONTRACT-COMMON-GATEWAY: /contracts/**
-    insurance-contract-common-gateway: /contracts/**
+    #insurance-contract-common-gateway: /contracts/**
+    insurance-contract-common-gateway:
+      path: /contracts/**
+      url: http://localhost:8090/
     legal-entities:
       path: /legal-entities/**
       url: http://localhost:8091/
