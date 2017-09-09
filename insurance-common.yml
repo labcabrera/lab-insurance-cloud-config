@@ -9,7 +9,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8070/eureka/
+      defaultZone: http://localhost:${app.port-mappint.eureka:8070}/eureka/
 
 management:
   context-path: /admin
@@ -18,3 +18,18 @@ management:
 
 logging:
   level.org: INFO
+
+
+app:
+  port-mapping:
+    zuul: 8080
+    eureka: 8070
+    mongo: 27017
+    contract-gateway: 8090
+    legal-entity-gateway: 8091
+    portfolio-gateway: 8092
+    asset-gateway: 8093
+    order-gateway: 8094
+    accounting-gateway: 8095
+    contract-creation-gateway: 8096
+    agreement-gateway: 8097

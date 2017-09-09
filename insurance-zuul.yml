@@ -1,0 +1,54 @@
+#TODO pasar a cloud config
+
+configuration:
+  projectName: insurance-zuul
+
+spring:
+  application:
+    name: insurance-zuul
+  thymeleaf:
+    #no cache templates under development phase
+    cache: false
+    
+server:
+  port: 8080
+
+zuul:
+  prefix: /api
+  routes:
+    # Error: eureka discovery dont resove server list (see issues):
+    contracts:
+      path: /contracts/**
+      url: http://localhost:8091/
+    legalEntities:
+      path: /legal-entities/**
+      url: http://localhost:8082/
+    assets:
+      path: /assets/**
+      url: http://localhost:8089/
+    orders:
+      path: /orders/**
+      url: http://localhost:8096/
+    accounting:
+      path: /accounting/**
+      url: http://localhost:8093/
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+
+#ribbon:
+#  eureka:
+#    enabled: true
+
+#ribbon:
+#  eureka:
+#   enabled: true
+#    ReadTimeout: 20000
+#    ConnectTimeout: 20000
+
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
