@@ -19,17 +19,16 @@ management:
 logging:
   level.org: INFO
 
-
-app:
-  port-mapping:
-    zuul: 8080
-    eureka: 8070
-    mongo: 27017
-    contract-gateway: 8090
-    legal-entity-gateway: 8091
-    portfolio-gateway: 8092
-    asset-gateway: 8093
-    order-gateway: 8094
-    accounting-gateway: 8095
-    contract-creation-gateway: 8096
-    agreement-gateway: 8097
+#app:
+#  port-mapping:
+#    zuul: 8080
+#    eureka: 8070
+#    mongo: 27017
+#    contract-gateway: 8090
+#    legal-entity-gateway: 8091
+#    portfolio-gateway: 8092
+#    asset-gateway: 8093
+#    order-gateway: 8094
+#    accounting-gateway: 8095
+#    contract-creation-gateway: 8096
+#    agreement-gateway: 8097
