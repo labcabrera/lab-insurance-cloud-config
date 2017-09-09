@@ -14,3 +14,7 @@ eureka:
 
 server:
   port: 8070
+
+logging:
+  level:
+    com.netflix.eureka.registry: WARN
