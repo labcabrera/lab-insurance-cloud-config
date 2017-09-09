@@ -6,4 +6,4 @@ spring:
     name: insurance-asset-gateway
 
 server:
-  port: 8089
+  port: 8093
