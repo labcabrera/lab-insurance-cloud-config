@@ -6,4 +6,4 @@ spring:
     name: insurance-portfolio-gateway
 
 server:
-  port: 8095
+  port: 8092
