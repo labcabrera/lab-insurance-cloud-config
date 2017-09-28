@@ -1,0 +1,9 @@
+configuration:
+  projectName: insurance-aws
+
+insurance:
+  aws:
+    s3:
+      profile: labcabrera
+      region: eu-west-1
+      bucket-name: lab-insurance-s3-01
