@@ -1,0 +1,18 @@
+configuration:
+  projectName: insurance-amqp
+
+queues:
+  contract:
+    creation: "contract-create"
+		approbation: "contract-approbation"
+    doc-creation: "contract-create-doc"
+	portfolio:
+    creation: "portfolio-createt"
+		creation-response: "portfolio-create.response"
+		creation-error: "portfolio-create.error"
+  order:
+    creation: "order-create"
+		process: "order-process"
+		valorization: "order-valorization"
+	payments:
+    initial-payment-reception: "initial-payment-reception"
