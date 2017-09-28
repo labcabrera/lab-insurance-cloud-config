@@ -7,7 +7,7 @@ queues:
     approbation: "contract-approbation"
     doc-creation: "contract-create-doc"
   portfolio:
-    creation: "portfolio-createt"
+    creation: "portfolio-create"
     creation-response: "portfolio-create.response"
     creation-error: "portfolio-create.error"
   order:
