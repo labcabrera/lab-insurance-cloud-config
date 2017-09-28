@@ -4,15 +4,15 @@ configuration:
 queues:
   contract:
     creation: "contract-create"
-		approbation: "contract-approbation"
+    approbation: "contract-approbation"
     doc-creation: "contract-create-doc"
-	portfolio:
+  portfolio:
     creation: "portfolio-createt"
-		creation-response: "portfolio-create.response"
-		creation-error: "portfolio-create.error"
+    creation-response: "portfolio-create.response"
+    creation-error: "portfolio-create.error"
   order:
     creation: "order-create"
-		process: "order-process"
-		valorization: "order-valorization"
-	payments:
+    process: "order-process"
+    valorization: "order-valorization"
+  payments:
     initial-payment-reception: "initial-payment-reception"
