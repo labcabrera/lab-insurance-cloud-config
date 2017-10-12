@@ -1,9 +1,9 @@
 configuration:
-  projectName: insurance-contract-creation-gateway
+  projectName: insurance-agreement-gateway
 
 spring:
   application:
-    name: insurance-asset-gateway
+    name: insurance-agreement-gateway
 
 server:
-  port: 8093
+  port: 8097
