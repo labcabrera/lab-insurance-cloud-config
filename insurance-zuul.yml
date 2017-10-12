@@ -15,35 +15,46 @@ server:
   tomcat:
     uri-encoding: UTF-8
 
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+    serviceUrl:
+      #defaultZone: http://localhost:8070/eureka/
+      defaultZone: http://lab-insurance-eureka.eu-west-1.elasticbeanstalk.com/eureka/
+
 zuul:
+  ignoredServices: "*"
   prefix: /api
   routes:
     #TODO cambiar por los valores de eureka, aunque esta provocando un error
     #insurance-contract-common-gateway: /contracts/**
-    insurance-contract-common-gateway:
-      path: /contracts/**
-      url: http://localhost:8090/
-    legal-entities:
-      path: /legal-entities/**
-      url: http://localhost:8091/
-    portfolios:
-      path: /portfolios/**
-      url: http://localhost:8092/
-    assets:
-      path: /assets/**
-      url: http://localhost:8093/
-    orders:
-      path: /orders/**
-      url: http://localhost:8094/
-    accounting:
-      path: /accounting/**
-      url: http://localhost:8095/
-    contract-creation:
-      path: /contract-creation/**
-      url: http://localhost:8096/
+    #insurance-contract-common-gateway:
+    #  path: /contracts/**
+    #  url: http://localhost:8090/
+    #legal-entities:
+    #  path: /legal-entities/**
+    #  url: http://localhost:8091/
+    #portfolios:
+    #  path: /portfolios/**
+    #  url: http://localhost:8092/
+    #assets:
+    #  path: /assets/**
+    #  url: http://localhost:8093/
+    #orders:
+    #  path: /orders/**
+    #  url: http://localhost:8094/
+    #accounting:
+    #  path: /accounting/**
+    #  url: http://localhost:8095/
+    #contract-creation:
+    #  path: /contract-creation/**
+    #  url: http://localhost:8096/
     agreements:
       path: /agreements/**
-      url: http://localhost:8097/
+      serviceId: insurance-agreement-gateway
+      stripPrefix: true
+
 
 #ribbon:
 #  eureka:
