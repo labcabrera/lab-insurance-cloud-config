@@ -19,6 +19,10 @@ logging:
   level:
     com.netflix.eureka.registry: WARN
 
+management:
+  security:
+    enabled: false
+
 ---
 spring:
   profiles: local
