@@ -12,6 +12,7 @@ queues:
     creation-error: "portfolio-create.error"
   order:
     creation: "order-create"
+    creation-error: "order-create.error"
     process: "order-process"
     valorization: "order-valorization"
     valorization-error: "order-valorization.error"
