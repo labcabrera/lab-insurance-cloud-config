@@ -1,0 +1,9 @@
+configuration:
+  projectName: insurance-agreement-gateway
+
+spring:
+  application:
+    name: insurance-agreement-gateway
+
+server:
+  port: 8097
