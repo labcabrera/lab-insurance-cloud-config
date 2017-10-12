@@ -10,6 +10,8 @@ queues:
     creation: "portfolio-create"
     creation-response: "portfolio-create.response"
     creation-error: "portfolio-create.error"
+    order-account: "portfolio-order-account"
+    order-account-error: "portfolio-order-account.error"
   order:
     creation: "order-create"
     creation-error: "order-create.error"
