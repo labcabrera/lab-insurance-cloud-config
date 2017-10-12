@@ -59,8 +59,7 @@ zuul:
     #  url: http://localhost:8096/
     agreements:
       path: /agreements/**
-      #serviceId: insurance-agreement-gateway
-      serviceId: INSURANCE-AGREEMENT-GATEWAY
+      serviceId: insurance-agreement-gateway
       stripPrefix: true
 
 
