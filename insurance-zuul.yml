@@ -27,13 +27,16 @@ eureka:
     registerWithEureka: false
     fetchRegistry: true
     serviceUrl:
-      #defaultZone: http://localhost:8070/eureka/
-      defaultZone: http://lab-insurance-eureka.eu-west-1.elasticbeanstalk.com/eureka/
+      defaultZone: ${EUREKA_URL:http://lab-insurance-eureka.eu-west-1.elasticbeanstalk.com}/eureka/
 
 zuul:
-  ignoredServices: "*"
   prefix: /api
   routes:
+    agreements:
+      path: /agreements/**
+      serviceId: insurance-agreement-gateway
+    #stripPrefix: true
+
     #TODO cambiar por los valores de eureka, aunque esta provocando un error
     #insurance-contract-common-gateway: /contracts/**
     #insurance-contract-common-gateway:
@@ -57,10 +60,6 @@ zuul:
     #contract-creation:
     #  path: /contract-creation/**
     #  url: http://localhost:8096/
-    agreements:
-      path: /agreements/**
-      serviceId: insurance-agreement-gateway
-      stripPrefix: true
 
 #hystrix:
 #  command:
