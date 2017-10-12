@@ -15,6 +15,13 @@ server:
   tomcat:
     uri-encoding: UTF-8
 
+management:
+  security:
+    enabled: false
+
+logging:
+  level.org: DEBUG
+
 eureka:
   client:
     registerWithEureka: false
