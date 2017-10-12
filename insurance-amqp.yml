@@ -14,5 +14,6 @@ queues:
     creation: "order-create"
     process: "order-process"
     valorization: "order-valorization"
+    valorization-error: "order-valorization.error"
   payment:
     initial-payment-reception: "initial-payment-reception"
