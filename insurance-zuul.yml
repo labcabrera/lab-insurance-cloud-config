@@ -62,16 +62,16 @@ zuul:
       serviceId: insurance-agreement-gateway
       stripPrefix: true
 
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 20000
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 20000
 
-ribbon:
-  eureka:
-    enabled: true
-    ReadTimeout: 20000
-    ConnectTimeout: 20000
+#ribbon:
+#  eureka:
+#    enabled: true
+#    ReadTimeout: 20000
+#    ConnectTimeout: 20000
