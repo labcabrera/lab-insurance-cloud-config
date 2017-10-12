@@ -20,7 +20,7 @@ management:
     enabled: false
 
 logging:
-  level.org: DEBUG
+  level.org: INFO
 
 eureka:
   client:
