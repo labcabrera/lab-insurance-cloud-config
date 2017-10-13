@@ -4,19 +4,29 @@ configuration:
 queues:
   contract:
     creation: "contract-create"
+    creation-error: "contract-create.error"
     approbation: "contract-approbation"
+    approbation-error: "contract-approbation.error"
     doc-creation: "contract-create-doc"
+    doc-creation-error: "contract-create-doc.error"
   portfolio:
     creation: "portfolio-create"
-    creation-response: "portfolio-create.response"
     creation-error: "portfolio-create.error"
+    #creation-response: "portfolio-create.response"
     order-account: "portfolio-order-account"
     order-account.error: "portfolio-order-account.error"
   order:
     creation: "order-create"
     creation-error: "order-create.error"
     process: "order-process"
+    process-error: "order-process.error"
     valorization: "order-valorization"
     valorization-error: "order-valorization.error"
   payment:
+    payment-reception: "payment-reception"
+    payment-reception-error: "payment-reception.error"
     initial-payment-reception: "initial-payment-reception"
+    initial-payment-reception-error: "initial-payment-reception.error"
+  trading:
+    creation: "trading-create"
+    creation-error: "trading-create.error"
