@@ -30,3 +30,8 @@ queues:
   trading:
     creation: "trading-create"
     creation-error: "trading-create.error"
+  fees:
+    contract-initialization: "fees-contract-initialization"
+    contract-initialization-error: "fees-contract-initialization.error"
+    process: "fees-process"
+    process-error: "fees-process.error"
