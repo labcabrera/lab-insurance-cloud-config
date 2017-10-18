@@ -3,3 +3,15 @@ configuration:
 
 server:
   port: 8060
+
+security:
+  keystore:
+    file: lab-insurance.jks
+    password: changeit
+    alias: lab-insurance
+
+management:
+  security.enabled: false
+
+logging:
+  level.org: INFO
