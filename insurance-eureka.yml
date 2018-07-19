@@ -2,8 +2,6 @@ configuration:
   projectName: insurance-eureka
 
 eureka:
-#  instance:
-#    hostname: localhost
   server:
     eviction-interval-timer-in-ms: 10000
   client:
@@ -28,11 +26,16 @@ spring:
   profiles: local
 eureka:
   instance:
-    hostname: 172.20.0.4
-    #hostname: localhost
+    hostname: localhost
 ---
 spring:
   profiles: aws
 eureka:
   instance:
     hostname: lab-insurance-eureka.eu-west-1.elasticbeanstalk.com
+---
+spring:
+  profiles: google-cloud
+eureka:
+  instance:
+    hostname: localhost
