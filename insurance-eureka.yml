@@ -28,7 +28,8 @@ spring:
   profiles: local
 eureka:
   instance:
-    hostname: localhost
+    hostname: 172.20.0.4
+    #hostname: localhost
 ---
 spring:
   profiles: aws

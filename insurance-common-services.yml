@@ -1,0 +1,9 @@
+configuration:
+  projectName: insurance-common-services
+
+spring:
+  application:
+    name: insurance-common-services
+
+server:
+  port: 8101

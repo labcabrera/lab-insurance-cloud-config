@@ -1,18 +1,9 @@
 configuration:
   projectName: insurance-common
 
-spring:
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/lab-insurance
-
 eureka:
   registerWithEureka: true
   fetchRegistry: true
-  client:
-    serviceUrl:
-      #defaultZone: http://localhost:8070/eureka/
-      defaultZone: http://lab-insurance-eureka.eu-west-1.elasticbeanstalk.com/eureka/
 
 management:
   security:
@@ -20,3 +11,22 @@ management:
 
 logging:
   level.org: INFO
+  level.org.lab.insurance: DEBUG
+
+---
+spring:
+  profiles: local
+  data:
+    mongodb:
+      uri: mongodb://localhost/lab-insurance
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+---
+spring:
+  profiles: aws
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://lab-insurance-eureka.eu-west-1.elasticbeanstalk.com/eureka/
