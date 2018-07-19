@@ -16,12 +16,14 @@ server:
 logging:
   level:
     com.netflix.eureka.registry: WARN
+  file: /var/log/insurance-eureka.log
 
 management:
   endpoints:
     web:
       exposure:
         include: '*'
+
 
 ---
 spring:
