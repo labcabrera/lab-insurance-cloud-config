@@ -18,8 +18,10 @@ logging:
     com.netflix.eureka.registry: WARN
 
 management:
-  security:
-    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 
 ---
 spring:
