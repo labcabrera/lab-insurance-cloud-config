@@ -16,7 +16,7 @@ server:
 logging:
   level:
     com.netflix.eureka.registry: WARN
-  file: /var/log/insurance-eureka.log
+  file: /home/lab_cabrera/insurance-eureka.log
 
 management:
   endpoints:
