@@ -6,12 +6,10 @@ eureka:
   fetchRegistry: true
 
 management:
-  security:
-    enabled: false
   endpoints:
     web:
       exposure:
-        include: *  
+        include: '*'
 
 logging:
   level.org: INFO
